@@ -1,4 +1,4 @@
-
+import SobreMi from './components/SobreMi';
 import { useState } from 'react';
 
 function Navbar() {
@@ -75,12 +75,23 @@ function App() {
   return (
     <>
       <Navbar />
+      
 
       <section id="inicio" className="container text-center mt-5">
         <h1>Bienvenido a mi portafolio</h1>
         <p>Este es mi sitio web personal desarrollado con React y Bootstrap.</p>
       </section>
+
+      <SobreMi id="sobre-mi"
+        nombre="Alan Abello"
+        profesion="Desarrollador Web"
+        biografia="Soy un apasionado del desarrollo web con experiencia en React, JavaScript y Bootstrap."
+        imagen="/public/images/perfil.jpg"
+        tecnologias={['React', 'JavaScript', 'Bootstrap', 'HTML', 'CSS']}
+      />
     </>
+
+    
   );
 }
 
