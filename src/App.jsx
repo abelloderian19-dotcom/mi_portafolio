@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import SobreMi from './components/SobreMi';
 import Proyectos from './components/Proyectos';
+import Noticias from './components/Noticias';
 
 const perfil = {
   nombre: 'Alan Abello',
@@ -70,6 +71,7 @@ function App() {
         </section>
         <SobreMi {...perfil} />
         <Proyectos />
+        <Noticias />
       </main>
       <footer className="site-footer">
         <div className="container">Hecho por {perfil.nombre} · Portafolio personal</div>

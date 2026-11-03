@@ -89,6 +89,14 @@ button:focus-visible {
 .project-link:hover,
 .project-link.btn-primary:hover { border-color: #d8d4e2; background: #eceaf1; color: #34313e; }
 
+.news-section { padding-block: 76px 88px; background: #f4f3f6; }
+.news-card { border: 1px solid #e7e5ec; border-radius: 16px; background: #faf9fb; box-shadow: 0 10px 28px #2620390a; }
+.news-card .card-body { padding: 24px; }
+.news-date { display: block; margin-bottom: 10px; color: #686477; font-size: .82rem; }
+.news-card .card-title { color: var(--ink); font-weight: 700; }
+.news-card .card-text { color: var(--muted); line-height: 1.7; }
+.news-error { color: #a12828; }
+
 @media (max-width: 767px) {
   .intro-hero { min-height: 380px; }
   .intro-content { padding-block: 62px; }
@@ -96,6 +104,7 @@ button:focus-visible {
   .about-section { grid-template-columns: 1fr; gap: 42px; padding-block: 64px; }
   .about-photo { width: min(72vw, 300px); }
   .projects-section { padding-block: 58px 68px; }
+  .news-section { padding-block: 58px 68px; }
   .project-description { min-height: 0; }
 }
 

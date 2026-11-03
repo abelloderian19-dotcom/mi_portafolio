@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "titulo": "Mi portafolio ya está publicado",
+    "fecha": "2026-11-03",
+    "contenido": "El portafolio ya se puede visitar en GitHub Pages. Reúne mi presentación personal y algunos de los proyectos que he desarrollado durante mi formación."
+  },
+  {
+    "id": 2,
+    "titulo": "MPAZ PRO forma parte de mis proyectos",
+    "fecha": "2026-11-03",
+    "contenido": "Agregué MPAZ PRO al portafolio y documenté sus herramientas principales, como Kotlin, Jetpack Compose, Room y Navigation Compose."
+  }
+]
