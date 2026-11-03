@@ -8,6 +8,8 @@ function SobreMi({ nombre, profesion, biografia, imagen, tecnologias }) {
           className="about-photo"
           width="360"
           height="360"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 

@@ -18,7 +18,7 @@ function Navbar() {
   const cerrarMenu = () => setMenuAbierto(false);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark site-navbar">
+    <nav className="navbar navbar-expand-lg navbar-dark site-navbar" aria-label="Navegación principal">
       <div className="container">
         <a className="navbar-brand fw-bold" href="#inicio" onClick={cerrarMenu}>
           Alan Abello<span className="brand-dot">.</span>
@@ -72,6 +72,22 @@ function App() {
         <SobreMi {...perfil} />
         <Proyectos />
         <Noticias />
+        <section id="contacto" className="contact-section" aria-labelledby="contact-title">
+          <div className="container contact-content">
+            <p className="eyebrow">SIGAMOS EN CONTACTO</p>
+            <h2 id="contact-title">¿Hablamos de un proyecto?</h2>
+            <p>Estoy abierto a conversar sobre desarrollo web, ideas y nuevos aprendizajes.</p>
+            <a
+              className="btn btn-outline-primary project-link"
+              href="https://github.com/abelloderian19-dotcom"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ver mi perfil en GitHub<span className="visually-hidden"> (se abre en una pestaña nueva)</span>
+              <span aria-hidden="true"> ↗</span>
+            </a>
+          </div>
+        </section>
       </main>
       <footer className="site-footer">
         <div className="container">Hecho por {perfil.nombre} · Portafolio personal</div>

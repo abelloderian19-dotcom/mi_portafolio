@@ -97,6 +97,12 @@ button:focus-visible {
 .news-card .card-text { color: var(--muted); line-height: 1.7; }
 .news-error { color: #a12828; }
 
+.contact-section { padding-block: 72px; background: #242333; color: #fff; text-align: center; }
+.contact-content { display: grid; justify-items: center; }
+.contact-content .eyebrow { color: #c5b9ff; }
+.contact-content h2 { margin: 0; font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 800; letter-spacing: -.05em; }
+.contact-content > p:not(.eyebrow) { margin: 12px 0 22px; color: #d3d1df; }
+
 @media (max-width: 767px) {
   .intro-hero { min-height: 380px; }
   .intro-content { padding-block: 62px; }
@@ -105,9 +111,12 @@ button:focus-visible {
   .about-photo { width: min(72vw, 300px); }
   .projects-section { padding-block: 58px 68px; }
   .news-section { padding-block: 58px 68px; }
+  .contact-section { padding-block: 58px; }
   .project-description { min-height: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; }
+  .project-card { transition: none; }
+  .project-card:hover { transform: none; }
 }

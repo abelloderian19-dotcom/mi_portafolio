@@ -51,11 +51,15 @@ function Noticias() {
 
         {!cargando && !error && (
           <div className="row g-4">
-            {noticias.map((noticia) => (
-              <div className="col-md-6" key={noticia.id}>
-                <NoticiaCard noticia={noticia} />
-              </div>
-            ))}
+            {noticias.length > 0 ? (
+              noticias.map((noticia) => (
+                <div className="col-md-6" key={noticia.id}>
+                  <NoticiaCard noticia={noticia} />
+                </div>
+              ))
+            ) : (
+              <p role="status">Todavía no hay noticias publicadas.</p>
+            )}
           </div>
         )}
       </div>

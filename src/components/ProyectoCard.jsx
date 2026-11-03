@@ -8,6 +8,7 @@ function ProyectoCard({ proyecto }) {
         width="640"
         height="360"
         loading="lazy"
+        decoding="async"
       />
       <div className="card-body d-flex flex-column">
         <p className="project-type">{proyecto.enfoque}</p>
