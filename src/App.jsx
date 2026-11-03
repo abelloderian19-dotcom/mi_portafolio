@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import SobreMi from './components/SobreMi';
-import Proyectos from './components/Proyectos';
 
 const perfil = {
   nombre: 'Alan Abello',
   profesion: 'Estudiante y desarrollador web',
   biografia:
-    'Me interesa crear experiencias web claras, accesibles y útiles. En este portafolio comparto lo que voy aprendiendo y los proyectos que construyo con React.',
-  imagen: '/images/perfil.jpg',
+    'En este portafolio comparto lo que voy aprendiendo y los proyectos que construyo con React.',
+  imagen: `${import.meta.env.BASE_URL}images/perfil.jpg`,
   tecnologias: ['React', 'JavaScript', 'Bootstrap', 'HTML', 'CSS'],
 };
 
@@ -69,7 +68,6 @@ function App() {
           <div className="intro-orbit" aria-hidden="true">&lt;/&gt;</div>
         </section>
         <SobreMi {...perfil} />
-        <Proyectos />
       </main>
       <footer className="site-footer">
         <div className="container">Hecho por {perfil.nombre} · Portafolio personal</div>

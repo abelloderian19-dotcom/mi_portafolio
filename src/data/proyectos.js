@@ -1,3 +1,5 @@
+const rutaImagen = (nombre) => `${import.meta.env.BASE_URL}images/projects/${nombre}`;
+
 const proyectos = [
   {
     id: 'mpaz',
@@ -18,7 +20,7 @@ const proyectos = [
       'Respuesta háptica',
       'Gradle Kotlin DSL',
     ],
-    imagen: '/images/projects/mpaz.svg',
+    imagen: rutaImagen('mpaz.svg'),
     alt: 'Ilustración representativa de una aplicación para estudiantes llamada MPAZ PRO',
     enlace: 'https://github.com/abelloderian19-dotcom/MPAZ-PRO--3/tree/develop',
     tipoEnlace: 'Ver repositorio',
@@ -29,7 +31,7 @@ const proyectos = [
     descripcion: 'Proyecto Fullstack para una pastelería, con una interfaz de administración.',
     enfoque: 'Sitio de pastelería y administración',
     tecnologias: ['javascript' , 'html', 'css', 'bootstrap'],
-    imagen: '/images/projects/milSabores.png',
+    imagen: rutaImagen('milSabores.png'),
     alt: 'Ilustración representativa del proyecto de pastelería 1000 Sabores',
     enlace: 'https://github.com/abelloderian19-dotcom/Fullstack-II',
     tipoEnlace: 'Ver repositorio',
@@ -42,7 +44,7 @@ const proyectos = [
     descripcion: 'Mi primera página web, creada durante el segundo semestre como proyecto inicial de desarrollo web.',
     enfoque: 'Primera página web',
     tecnologias: ['javascript' , 'html', 'css'],
-    imagen: '/images/projects/stylepro.png',
+    imagen: rutaImagen('stylepro.png'),
     alt: 'Ilustración representativa del sitio StylePro Uniformes',
     enlace: 'https://styleprouniformes.vercel.app/',
     tipoEnlace: 'Ver sitio web',
