@@ -37,7 +37,7 @@ describe('Tarjeta de proyecto', () => {
       descripcion: 'Descripción de prueba.',
       enfoque: 'Proyecto académico',
       tecnologias: ['React', 'Bootstrap'],
-      imagen: '/images/proyecto.png',
+      imagen: '/images/projects/mpaz.svg',
       alt: 'Imagen del proyecto de prueba',
       enlace: 'https://github.com/alan/proyecto',
       tipoEnlace: 'Ver repositorio',
@@ -111,5 +111,16 @@ describe('Carga de noticias desde JSON', () => {
     render(<Noticias />);
 
     expect(await screen.findByRole('alert')).toBeTruthy();
+  });
+
+  it('avisa cuando el JSON no contiene noticias', async () => {
+    spyOn(window, 'fetch').and.returnValue(Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve([]),
+    }));
+
+    render(<Noticias />);
+
+    expect(await screen.findByText('Todavía no hay noticias publicadas.')).toBeTruthy();
   });
 });
