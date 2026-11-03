@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Portada ilustrada de MPAZ PRO</title>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#26233e"/><stop offset="1" stop-color="#6254bd"/></linearGradient></defs>
+  <rect width="640" height="360" fill="url(#bg)"/><circle cx="540" cy="52" r="115" fill="#aa99ff" opacity=".14"/>
+  <rect x="42" y="48" width="290" height="264" rx="20" fill="#fff" opacity=".97"/><rect x="65" y="72" width="108" height="12" rx="6" fill="#d7d3e8"/>
+  <rect x="65" y="112" width="240" height="64" rx="12" fill="#f2efff"/><circle cx="95" cy="144" r="14" fill="#8066f3"/><rect x="120" y="133" width="145" height="8" rx="4" fill="#5d5770"/><rect x="120" y="149" width="100" height="6" rx="3" fill="#c1bdd0"/>
+  <rect x="65" y="190" width="110" height="96" rx="12" fill="#ede9ff"/><rect x="187" y="190" width="118" height="96" rx="12" fill="#f7f5ff"/><path d="M93 245l18-20 17 10 17-25" fill="none" stroke="#7154e8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="380" y="165" fill="#fff" font-family="Arial,sans-serif" font-size="42" font-weight="700">MPAZ PRO</text><text x="382" y="200" fill="#d8d2ff" font-family="Arial,sans-serif" font-size="17">Espacio para estudiantes</text>
+  <rect x="382" y="225" width="154" height="38" rx="19" fill="#8d79f4"/><text x="403" y="250" fill="#fff" font-family="Arial,sans-serif" font-size="14">APRENDER · CRECER</text>
+</svg>

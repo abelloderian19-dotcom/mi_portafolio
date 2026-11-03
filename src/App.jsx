@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import SobreMi from './components/SobreMi';
+import Proyectos from './components/Proyectos';
 
 const perfil = {
   nombre: 'Alan Abello',
@@ -68,6 +69,7 @@ function App() {
           <div className="intro-orbit" aria-hidden="true">&lt;/&gt;</div>
         </section>
         <SobreMi {...perfil} />
+        <Proyectos />
       </main>
       <footer className="site-footer">
         <div className="container">Hecho por {perfil.nombre} · Portafolio personal</div>
